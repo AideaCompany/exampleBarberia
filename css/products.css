@@ -1,0 +1,96 @@
+@font-face {
+    font-family: "MyriadPro";
+    src: url("../Fonts/MyriadPro-Regular.otf");
+
+}
+
+@font-face {
+    font-family: "Poppins";
+    src: url("../Fonts/Poppins-Regular.otf");
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: "Poppins";
+    box-sizing: border-box;
+    text-emphasis: none;
+   
+}
+
+body {
+    background: rgba(54, 49, 49, 0.726);
+    padding: 5px 0.5% 5px 0.5%;
+    width: 100%;
+}
+
+/*  products*/
+.containerProducts {
+    background: white;
+    border: solid rgb(32, 32, 32) 1px;
+}
+
+.products {
+    padding-top : 16%;
+    margin: 0;
+    width: 100%;
+    max-width: 100%;
+    color: black;
+
+}
+
+.products .title {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size : 3em;
+}
+.products .text {
+    margin-top :2%;
+    padding-bottom: 2%;
+}
+.products .text img{
+    height: 100px;
+    width: 120px ;
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+}
+
+/* Gallery */
+.containerGallery {
+    background: white ;
+}
+.gallery > div {
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.gallery img {
+    height:  400px;
+    width: 80%;
+}
+.gallery .one img {
+    width: 30%;
+}
+.gallery .two img {
+    width: 40%;
+}
+.gallery .three img {
+    width: 40%;
+}
+.gallery .one div{
+    display: flex;
+    justify-content: space-between;
+}
+.gallery .two div{
+    display: flex;
+    justify-content: space-between;
+}
+.gallery .three div{
+    display: flex;
+    justify-content: space-between;
+}
+.gallery .four div {
+    text-align: center;
+}

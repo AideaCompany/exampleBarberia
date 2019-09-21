@@ -1,0 +1,92 @@
+@font-face {
+    font-family: "MyriadPro";
+    src: url("../Fonts/MyriadPro-Regular.otf");
+
+}
+
+@font-face {
+    font-family: "Poppins";
+    src: url("../Fonts/Poppins-Regular.otf");
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: "Poppins";
+    box-sizing: border-box;
+    text-emphasis: none;
+   
+}
+
+body {
+    background: rgba(54, 49, 49, 0.726);
+    padding: 5px 0.5% 5px 0.5%;
+    width: 100%;
+}
+
+.formContainer {
+    background: white;
+
+}
+
+.formContainer .title {
+    color : black ;
+    justify-content: center;
+    font-size:  3em;
+}
+
+.formContainer img {
+    height: 100px;
+    width: 120px ;
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.formContainer .form {
+    border: solid 1px gray;
+    border-radius: 20px;
+    margin: 15% 0 15% 0;
+}
+.formContainer .form input {
+    height: 100px;
+    width: 100%;
+    text-align: start;
+}
+.formContainer .form .message {
+    height: 300px;
+    width: 100%;
+}
+
+.formContainer .button {
+    justify-content: center;
+}
+
+.formContainer button {
+    padding: 0% 3% 0% 3%;
+    width: 300px;
+    margin-bottom: 5%;
+    font-size: 3em;
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+}
+.formContainer .text {
+    display: block;
+    text-align: center;
+}
+.formContainer .text h2 {
+    font-size: 3em;
+    color: black;
+    overflow: hidden;
+
+}
+.formContainer .text p {
+    font-size: 1em;
+    color: black;
+    margin-bottom: 5%;
+    overflow: hidden;
+
+}

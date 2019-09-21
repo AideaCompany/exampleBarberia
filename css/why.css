@@ -1,0 +1,139 @@
+@font-face {
+    font-family: "MyriadPro";
+    src: url("../Fonts/MyriadPro-Regular.otf");
+
+}
+
+@font-face {
+    font-family: "Poppins";
+    src: url("../Fonts/Poppins-Regular.otf");
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: "Poppins";
+    box-sizing: border-box;
+    text-emphasis: none;
+   
+}
+
+body {
+    background: rgba(54, 49, 49, 0.726);
+    padding: 5px 0.5% 5px 0.5%;
+    width: 100%;
+}
+
+
+/*  why*/
+.containerWhy {
+    background: white;
+    border: solid rgb(32, 32, 32) 1px;
+}
+
+.why {
+    padding-top : 16%;
+    margin: 0;
+    width: 100%;
+    max-width: 100%;
+    color: black;
+
+}
+
+.why .title {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size : 3em;
+}
+.why .text {
+    margin-top :2%;
+    padding-bottom: 2%;
+}
+.why .text img{
+    height: 100px;
+    width: 120px ;
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+}
+
+/* History */
+
+.containerHistory {
+    background-image: url("/Fonts/images/pexels-photo-1319459.jpg");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+    border: solid rgb(32, 32, 32) 1px;
+}
+
+.history {
+    background-color: rgba(189, 164, 164, 0.8);
+    padding: 15%;
+    margin: 0;
+    width: 100%;
+    max-width: 100%;
+    color: #ffff;
+
+}
+.history .title {
+    justify-content: center;
+    margin-bottom: 20%;
+    color: white ;
+    font-size: 3em;
+}
+
+.history img {
+    margin-left :20%;
+    height: 200px;
+    widows: 200px;
+}
+
+/* Mission */
+.containerMission {
+    background: #212023;
+
+}
+.mission {
+    margin: 0;
+    width: 100%;
+    max-width: 100%;
+    color: white;
+}
+.mission  .one {
+    margin-top: 10%;
+}
+.mission  .two {
+    margin-top: 5%;
+    margin-bottom: 10%;
+}
+.mission .img {
+    text-align: center;
+}
+.mission img {
+    width: 300px;
+    height: 300px;
+}
+.mission h2{
+    overflow: hidden;
+    text-align: center;
+    font-size: 3em;
+    font-weight: bold;
+}
+.mission p{
+    text-align: justify;
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-top: 10%;
+    font-size: 1em;
+    font-weight: bold;
+}
+.white {
+    height: 40px;
+    width: 100%;
+    background: white;
+}
