@@ -19,7 +19,7 @@ nav {
 }
 
 nav img {
-    display: none;
+    /* display: none; */
     position: fixed;
     height: 210px;
     width: 230px;

@@ -28,7 +28,7 @@ body {
 
 /*  Good*/
 .containerGood {
-    background-image: url("/Fonts/images/pexels-photo-1319460.jpg");
+    background-image: url("../Fonts/images/pexels-photo-1319460.jpg");
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -185,7 +185,7 @@ body {
 
 /* Service */
 .containerService {
-    background-image: url("/Fonts/images/pexels-photo-2809652.jpg");
+    background-image: url("../Fonts/images/pexels-photo-2809652.jpg");
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;

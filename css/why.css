@@ -62,7 +62,7 @@ body {
 /* History */
 
 .containerHistory {
-    background-image: url("/Fonts/images/pexels-photo-1319459.jpg");
+    background-image: url("../Fonts/images/pexels-photo-1319459.jpg");
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;

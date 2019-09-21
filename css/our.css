@@ -29,7 +29,7 @@ body {
 
 /*  our*/
 .containerOur {
-    background-image: url("/Fonts/images/pexels-photo-1319462.jpg");
+    background-image: url("../Fonts/images/pexels-photo-1319462.jpg");
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
