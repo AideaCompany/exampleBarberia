@@ -25,6 +25,9 @@ body {
     width: 100%;
 }
 
+.hiddeComputer{
+    display: none;
+}
 
 
 /*  our*/
@@ -39,7 +42,7 @@ body {
 }
 
 .our {
-    background-color: rgba(189, 164, 164, 0.8);
+    background-color: rgba(200, 164, 170, 0.9);
     padding-top : 16%;
     margin: 0;
     width: 100%;
@@ -88,34 +91,18 @@ body {
     padding: 5% ;
 }
 .gallery img {
-    width: 100%;
-    height: 80%;
-}
-.gallery > div {
-    position: relative;
-}
-.gallery p {
-    color: black ;
-    font-size: 3em;
-    font-weight: bolder;
-    position: absolute;
-}
-.gallery .one p {
-    top : 60%;
-    left : 10%;
-}
-.gallery .two p {
-    top : 10%;
-    left : 10%;
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
 }
 
-.gallery .three p {
-    top : 60%;
-    left : 10%;
-}
-.gallery .four p {
-    top : 10%;
-    left : 10%;
+.gallery > div > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Extras */
@@ -161,4 +148,39 @@ body {
     padding-top: 10%;
     text-align: center;
     width: 100%;
+}
+
+@media screen and (max-width: 768px){
+
+
+    .hiddeComputer{
+        display: initial;
+    }
+    .our{
+        padding-top:0;
+    }
+    .imgGood img{
+        width: 200px;
+    }
+
+    .gallery img {
+        width: 200px;
+        height: 150px;
+
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .gallery img {
+        width: 390px;
+        height: 250px;
+
+    }
+    .extras p{
+        text-align: center;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 10px;
+
+    }
 }

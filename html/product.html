@@ -12,28 +12,85 @@
     <link rel="stylesheet" href="../icons/css/font-awesome.min.css">
     <link rel="stylesheet" href="../css/nav&footer.css">
 
+    <link rel="stylesheet" href="../css/boostrap/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/our.css">
+    <link rel="stylesheet" href="../icons/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/nav&footer.css">
+
+    <link rel="stylesheet" href="../css/jquery-ui.min.css">
+
+    <script src="../js/jquery-3.4.1.min.js" type="text/javascript"></script>
+    <script type="text/javascript" src="../js/jquery-ui.min.js"></script>
+    <script src="../js/app.js" type="text/javascript"></script>
+
 
 </head>
 
 <body>
+    <!--NavTablet Cel-->
+    <div class="hamburger" id="navHam">
+        <i class="fa fa-bars fa-2x"></i>
+    </div>
+    <div class="containerNavHam2">
+
+    </div>
+    <div class="navTabletCel">
+        <div class="row">
+            <div class="col-8 containerNavHam">
+                <div class="x">
+                    <i class="fa fa-times fa-2x"></i>
+                </div>
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="our.html">Nosotros</a></li>
+                    <li><a href="product.html">Productos</a></li>
+                    <li><a href="contact.html">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
     <!-- Nav -->
-    <nav>
-        <div>lorem</div>
-        <div>ipsum</div>
-        <div>dolor</div>
-        <div><img src="../Fonts/images/logo_barberia_negro.png"></div>
-        <div>sit</div>
-        <div>ametonsect</div>
-        <div>tuer</div>
+    <nav class="navComputer">
+        <div class="row  ">
+            <div class="col-lg-5 ">
+                <div class="row">
+                    <div class="col-lg-6 containerNav">
+                        <a href="../index.html">Inicio</a>
+                    </div>
+                    <div class="col-lg-6 containerNav">
+                        <a href="our.html">Nosotros</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2 containerImg ">
+                <img src="../Fonts/images/logo_barberia_negro.png">
+            </div>
+            <div class="col-lg-5 ">
+                <div class="row">
+                    <div class="col-lg-6 containerNav">
+                        <a href="product.html">Productos</a>
+                    </div>
+                    <div class="col-lg-6 containerNav">
+                        <a href="contact.html">Contacto</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
     </nav>
     <div class="section">
     </div>
     <!-- products  -->
     <div class="containerProducts">
-        <div class="container products">
+        <div class=" products">
+            <div class="col-lg-2 containerImg hiddeComputer ">
+                <img src="../Fonts/images/logo_barberia_negro.png">
+            </div>
             <div class="row title">
                 <div class="col-lg-12 col-md-12">
-                    <div>the products we sell</div>
+                    <div>Los productos que vendemos</div>
                 </div>
             </div>
             <div class="row text">
@@ -56,38 +113,43 @@
     <!-- Gallery -->
     <div class="containerGallery">
         <div class="container gallery">
-            <div class="row one">
-                <div class="col-lg-12 col-md-12">
+            <div class="row ">
+                <div class="col-lg-3 col-md-3 col-12">
                     <img src="../Fonts/images/kit-para-hombre-cabello.jpg" alt="">
+                </div>
+                <div class="col-lg-3 col-md-3 col-12">
                     <img src="../Fonts/images/gel-para-el-pelo-hombres.jpg" alt="">
+                </div>
+                <div class="col-lg-3 col-md-3 col-12">
                     <img src="../Fonts/images/D_NQ_NP_994386-MCO31556140781_072019-V.jpg" alt="">
                 </div>
-            </div>
-            <div class="row two">
-                <div class="col-lg-12 col-md-12">
+                <div class="col-lg-3 col-md-3 col-12">
                     <img src="../Fonts/images/download.jpg" alt="">
+                </div>
+            </div>
+            <div class="row ">
+                <div class="col-lg-3 col-md-3 col-12">
+                    <img src="../Fonts/images/productx.jpg" alt="">
+                </div>
+                <div class="col-lg-3 col-md-3 col-12">
                     <img src="../Fonts/images/aceite-para-barba-Honest-Amish-2.jpg" alt="">
                 </div>
-            </div>
-            <div class="row three">
-                <div class="col-lg-12 col-md-12">
+                <div class="col-lg-3 col-md-3 col-12">
                     <img src="../Fonts/images/61daDh2bluL._SX425_.jpg" alt="">
-                    <img src="../Fonts/images/3614272035607_HOUSE-99_STRIP-CLEAN_Bottle_250_grid_shadow_preview.jpg" alt="">
+                </div>
+                <div class="col-lg-3 col-md-3 col-12">
+                    <img src="../Fonts/images/3614272035607_HOUSE-99_STRIP-CLEAN_Bottle_250_grid_shadow_preview.jpg"
+                        alt="">
                 </div>
             </div>
-            <div class="row four">
-                <div class="col-lg-12 col-md-12">
-                    <img src="../Fonts/images/pngocean.com-id-hcpzg.png" alt="">
-                    
-                </div>
-            </div>
+
         </div>
     </div>
     <!-- Footer -->
     <footer>
-        <div class="container footer">
-            <div class="row contact">Contact us ¡</div>
-            <div class="row righs">All righs reserved</div>
+        <div class=" footer">
+            <div class="row contact">Contactanos</div>
+            <div class="row righs">Todos los derechos reservados</div>
             <div class="row icons">
                 <i class="fa fa-twitter fa-3x"></i>
                 <i class="fa fa-facebook-square fa-3x"></i>

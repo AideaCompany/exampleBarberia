@@ -1,16 +1,23 @@
-.section {
-    height: 60px;
+body{
+    margin: 0;
+    padding: 0;
+    
 }
+.row{
+    margin-right: -0px;
+    margin-left: 0px;
+}
+
 /* Navbar */
-nav {
-    font-size: 0.7em;
+.navTabletCel, .hamburger{
+    display: none;
+}
+
+.navComputer {
+    
     background: rgb(26, 24, 24);
     position: fixed;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 5px 10% 5px 10%;
-    width: 99%;
+    width: 100%;
     height: 60px;
     color: #ffff;
     border-bottom-left-radius: 10px;
@@ -18,12 +25,32 @@ nav {
     z-index: 200;
 }
 
+
+.row{
+    width: 100%;
+}
 nav img {
     /* display: none; */
     position: fixed;
-    height: 210px;
-    width: 230px;
-    transform: translateX(-115px);
+    width: 150px;
+
+}
+.containerImg{
+    display: flex;
+    justify-content: center;
+
+}
+
+.containerNav a{
+        text-decoration: none;
+        color: #ffff;
+        font-size: 12pt;
+        
+}
+.containerNav{
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
 }
 
 
@@ -34,7 +61,7 @@ nav img {
     overflow: hidden;
     width: 100%;
     margin: 0;
-    max-width: 100%;
+
 }
 .footer .row {
     justify-content: center;
@@ -44,6 +71,7 @@ nav img {
     color: white;
     font-size: 2em;
     font-weight: bold;
+
 }
 .footer .righs {
     margin-top : 3%;
@@ -55,4 +83,78 @@ nav img {
     margin-top : 2%;
     margin-bottom: 5%;
     padding: 0 30% 0 30%;
+}
+
+.hiddeComputer{
+    display: none;
+}
+
+
+@media screen and (max-width: 768px){
+    body{
+        position: relative;
+    }
+    .hiddeTable{
+        display: none;
+    }
+    .hiddeComputer{
+        display: initial;
+    }
+
+    .navComputer {
+        display: none;
+    }
+    .hamburger{
+        display: initial;
+        position: fixed;
+        top: 10px;
+        left: 20px;
+        z-index: 16;
+        color: white;
+    }
+    .x{
+        position: absolute;
+        z-index: 50;
+        color: white;
+        top: 10px;
+        left: 20px;
+    }
+
+    .navTabletCel{
+        display: initial;
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        z-index: 50;
+        display: none;
+        
+    }
+    .navTabletCel a{
+        text-decoration: none;
+        color: #ffffff;
+        
+    }
+    .navTabletCel ul{
+        margin-top: 50px;
+    }
+    .navTabletCel li{
+        margin-top: 30px;
+        font-size: 16pt;
+        margin-left: 50px;
+    }
+    .containerNavHam{
+        background-color: rgb(0, 0, 0) ;
+        height: 100vh;
+        
+    }
+    .containerNavHam2{
+        background-color: rgba(0, 0, 0, 70%) ;
+        height: 100vh;
+        position: fixed;
+        width: 100%;
+        z-index: 17;
+        top: 0;
+        display: none;
+    }
+   
 }

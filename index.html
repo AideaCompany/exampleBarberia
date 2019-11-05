@@ -5,42 +5,89 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Ejemplo barberia</title>
-
+    <title>Ejemplo Barberia</title>
     <link rel="stylesheet" href="css/boostrap/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="icons/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/nav&footer.css">
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
+
+    <script src="js/jquery-3.4.1.min.js" type="text/javascript"></script>
+    <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+    <script src="js/app.js" type="text/javascript"></script>
+
 
 
 </head>
 
 <body>
-    <!-- Nav -->
-    <nav>
-        <div>lorem</div>
-        <div>ipsum</div>
-        <div>dolor</div>
-        <div><img src="Fonts/images/logo_barberia_negro.png"></div>
-        <div>sit</div>
-        <div>ametonsect</div>
-        <div>tuer</div>
-    </nav>
-    <div class="section">
-
+    <!--NavTablet Cel-->
+    <div class="hamburger" id="navHam">
+        <i class="fa fa-bars fa-2x"></i>
     </div>
+    <div class="containerNavHam2">
+
+        </div>
+    <div class="navTabletCel">
+        <div class="row">
+            <div class="col-8 containerNavHam">
+                <div class="x">
+                    <i class="fa fa-times fa-2x"></i>
+                </div>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="html/our.html">Nosotros</a></li>
+                    <li><a href="html/product.html">Productos</a></li>
+                    <li><a href="html/contact.html">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+        
+    </div>
+    <!-- Nav -->
+    <nav class="navComputer">
+        <div class="row  ">
+            <div class="col-lg-5 ">
+                <div class="row">
+                    <div class="col-lg-6 containerNav">
+                        <a href="index.html">Inicio</a>
+                    </div>
+                    <div class="col-lg-6 containerNav">
+                        <a href="html/our.html">Nosotros</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2 containerImg ">
+                <img src="Fonts/images/logo_barberia_negro.png">
+            </div>
+            <div class="col-lg-5 ">
+                <div class="row">
+                    <div class="col-lg-6 containerNav">
+                        <a href="html/product.html">Productos</a>
+                    </div>
+                    <div class="col-lg-6 containerNav">
+                        <a href="html/contact.html">Contacto</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </nav>
 
     <!-- Good of times -->
     <div class="containerGood">
         <div class="container good">
             <div class="row title">
+                <div class="col-lg-12 imgGood hiddeComputer ">
+                    <img src="Fonts/images/logo_barberia_negro.png">
+                </div>
                 <div class="col-lg-6 col-md-12">
                     <div>Good O’ Times</div>
                 </div>
             </div>
             <div class="row text">
                 <div class="col-lg-4 col-md-12">
-                    <img src="/Fonts/images/Logo_barberia_blanco.png" alt="">
+                    <!-- <img src="/Fonts/images/Logo_barberia_blanco.png" alt=""> -->
                 </div>
                 <div class="col-lg-4 col-md-12">
                     <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
@@ -50,74 +97,87 @@
                         illum dolore eu feugiat .</p>
                 </div>
                 <div class="col-lg-4 col-md-12">
-                    <img src="/Fonts/images/Logo_barberia_blanco.png" alt="">
+                    <!--  <img src="/Fonts/images/Logo_barberia_blanco.png" alt=""> -->
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-12">
-                    <div class="button"></div>
+                <div class="col-lg-12 containerButton hiddeTable">
+                    <a href="#cuts" id="ancla">
+                        <div class="button"></div>
+                    </a>
                 </div>
             </div>
         </div>
     </div>
 
     <!-- cuts -->
-    <div class="containerCuts">
-        <div class="container cuts">
-            <div class="row cards">
-                <div class="col-lg-4 col-md-12">
-                    <div class="one">
-                        <img src="/Fonts/images/mission.png">
-                        <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis blanditiis</div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-12">
-                    <div class="two">
-                        <img src="/Fonts/images/mission.png">
-                        <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-12">
-                    <div class="three">
-                        <img src="/Fonts/images/mission.png">
-                        <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis blanditiis libero
-                            deleniti </div>
-                    </div>
+    <div id="cuts" class="containerCuts">
+        <div class=" row">
+            <div class="col-lg-4 col-md-4 col-12  containerC">
+                <div class="cardCut">
+
+                    <img src="Fonts/images/1x/machine.png">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis blanditiis</p>
+
                 </div>
             </div>
-            <div class="row button">
-                <div class="col-lg-12 col-md-12">
-                    <div>lorem ipsum</div>
+            <div class="col-lg-4 col-md-4 col-12 containerC ">
+                <div class="cardCut">
+
+                    <img src="Fonts/images/1x/machine2.png">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis blanditiis</p>
+
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-12  containerC">
+                <div class="cardCut">
+
+                    <img src="Fonts/images/1x/scissors.png">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis blanditiis</p>
+
                 </div>
             </div>
         </div>
     </div>
 
+
     <!-- Call -->
     <div class="containerCall">
         <div class="container call">
             <div class="row images">
-                <div class="col-lg-4 col-md-12  ">
+                <div class="col-lg-4 col-md-4 col-12 ">
                     <img src="Fonts/images/2.jpg">
                 </div>
-                <div class="col-lg-4 col-md-12 ">
+                <div class="col-12 namesMobile">
+                        <h2>Jhon</h2>
+                        <p>"Quick hands"</p>
+                </div>
+                <div class="col-lg-4 col-md-4 col-12 ">
                     <img src="Fonts/images/barber-1100x734.jpg">
                 </div>
-                <div class="col-lg-4 col-md-12 ">
+                <div class="col-12 namesMobile">
+                        <h2>Thomas</h2>
+                        <p>"Suttle touch"</p>
+                </div>
+                <div class="col-lg-4 col-md-4 col-12 ">
                     <img src="Fonts/images/f302f29a248a03a0ddf469105d5590ec.jpg">
                 </div>
+                <div class="col-12 namesMobile">
+                        <h2>Ed</h2>
+                        <p>"Perfect beard"</p>
+                </div>
             </div>
-            <div class="row names">
-                <div class="col-lg-4 col-md-12">
+            <div class="row names ">
+                <div class="col-lg-4 col-md-4">
                     <h2>Jhon</h2>
                     <p>"Quick hands"</p>
 
                 </div>
-                <div class="col-lg-4 col-md-12">
+                <div class="col-lg-4 col-md-4">
                     <h2>Thomas</h2>
                     <p>"Suttle touch"</p>
                 </div>
-                <div class="col-lg-4 col-md-12">
+                <div class="col-lg-4 col-md-4">
                     <h2>Ed</h2>
                     <p>"Perfect beard"</p>
                 </div>
@@ -130,7 +190,7 @@
         <div class="container service">
             <div class="row one">
                 <div class="col-lg-6 col-md-12  text">
-                    <h2>Services</h2>
+                    <h2>Servicios</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime quidem cumque omnis dignissimos
                         consectetur voluptatem exercitationem harum eius debitis praesentium at excepturi doloribus,
                         vero rerum labore totam, placeat, quisquam ullam. Lorem ipsum dolor sit amet, consectetur
@@ -143,10 +203,18 @@
                 </div>
             </div>
             <div class="row two">
+                <div class="col-lg-6 col-md-12  text hiddeComputer">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime quidem cumque omnis dignissimos
+                        consectetur voluptatem exercitationem harum eius debitis praesentium at excepturi doloribus,
+                        vero rerum labore totam, placeat, quisquam ullam. Lorem ipsum dolor, sit amet consectetur
+                        adipisicing elit. Quasi, ipsa nostrum officiis adipisci quo incidunt! Minima labore tempore
+                        necessitatibus ab ducimus. Quo optio omnis ea tenetur sit, perferendis laboriosam sunt.</p>
+
+                </div>
                 <div class="col-lg-6 col-md-12 img">
                     <img src="Fonts/images/extra2.png">
                 </div>
-                <div class="col-lg-6 col-md-12  text">
+                <div class="col-lg-6 col-md-12  text  hiddeTable">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime quidem cumque omnis dignissimos
                         consectetur voluptatem exercitationem harum eius debitis praesentium at excepturi doloribus,
                         vero rerum labore totam, placeat, quisquam ullam. Lorem ipsum dolor, sit amet consectetur
@@ -160,16 +228,18 @@
 
     <!-- Footer -->
     <footer>
-            <div class="container footer">
-                <div class="row contact">Contact us ¡</div>
-                <div class="row righs">All righs reserved</div>
-                <div class="row icons">
-                        <i class="fa fa-twitter fa-3x"></i>
-                        <i class="fa fa-facebook-square fa-3x"></i>
-                        <i class="fa fa-instagram fa-3x"></i>
-                </div>
+        <div class=" footer">
+            <div class="row contact">Contactanos</div>
+            <div class="row righs">Todos los derechos reservados</div>
+            <div class="row icons">
+                <i class="fa fa-twitter fa-3x"></i>
+                <i class="fa fa-facebook-square fa-3x"></i>
+                <i class="fa fa-instagram fa-3x"></i>
             </div>
+        </div>
     </footer>
+
+
 </body>
 
 </html>

@@ -9,21 +9,15 @@
     src: url("../Fonts/Poppins-Regular.otf");
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
     font-family: "Poppins";
     box-sizing: border-box;
-    text-emphasis: none;
-   
+
 }
 
-body {
-    background: rgba(54, 49, 49, 0.726);
-    padding: 5px 0.5% 5px 0.5%;
-    width: 100%;
-}
 
 
 /*  Good*/
@@ -34,12 +28,12 @@ body {
     -o-background-size: cover;
     background-size: cover;
 
-    border: solid rgb(32, 32, 32) 1px;
+
 }
 
 .good {
-    background-color: rgba(189, 164, 164, 0.8);
-    padding-top : 16%;
+    background-color: rgba(125, 104, 104, 0.7);
+    padding-top: 16%;
     margin: 0;
     width: 100%;
     max-width: 100%;
@@ -51,12 +45,12 @@ body {
     display: flex;
     justify-content: center;
     text-align: center;
-    font-size : 3em;
+    font-size: 3em;
 }
 
-.good .text img{
+.good .text img {
     height: 100px;
-    width: 120px ;
+    width: 120px;
     position: absolute;
     bottom: 50%;
     left: 50%;
@@ -64,17 +58,21 @@ body {
 
 .good .button {
     margin: auto;
-    width: 0; 
-    height: 0; 
+    width: 0;
+    height: 0;
     border-right: 10px solid transparent;
     border-bottom: 10px solid transparent;
     border-left: 10px solid transparent;
     border-top: 10px solid #212023;
-    
+
 }
 
 .good .button:hover {
     cursor: pointer;
+}
+
+.containerButton a{
+    text-decoration: none;
 }
 
 /* Cuts */
@@ -83,70 +81,33 @@ body {
     height: 600px;
 }
 
-.cuts{
-    height: 100%;
-    padding-top: 5%;
-}
-
-.cuts .cards {
-    overflow: hidden;
-    height: 70%;
-    color: white;
+.containerC{
     display: flex;
-    justify-content: space-between;
-
+    justify-content: center;
+    text-align: center;
+}
+.cardCut{
+    margin-top: 50px;
+    width: 300px;
+    height: 500px;
+    border: 1px;
+    border: 1px solid white;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    color: #ffff;
 }
 
-.cuts .cards > div > div {
-    border: #ffff 0.5px solid;
-    height: 380px;
+.cardCut img{
+    margin-top: 50px;
     width: 200px;
 }
-
-.cuts .cards div div  {
-    text-align:  center;
-    margin: auto;
-
+.cardCut p{
+    margin-top: 50px;
+    font-size: 14pt ;
 }
 
-.cuts .cards img {
-    height: 50px;
-    width: 50px;
-    margin-top: 20%;
-}
 
-.cuts .cards div div div {
-    margin-top: 30%;
-}
-
-.cuts .button div div {
-    color:  white ;
-    width: fit-content;
-    padding: 1%;
-    border:0.5px solid white ;
-    border-radius: 20px ; 
-    margin: auto;
-    font-size: 2em;
-}
-
-.cuts .button {
-    height: 30%;
-    align-content: center;
-}
-
-.cuts div .one{
-    border-bottom-left-radius: 20px ;
-    border-bottom-right-radius: 20px ;
-}
-
-.cuts div .two{
-    border-radius: 20px;
-}
-
-.cuts div .three{
-    border-top-left-radius: 20px ;
-    border-top-right-radius: 20px ;
-}
 
 /* Call */
 .containerCall {
@@ -157,28 +118,29 @@ body {
     height: 100%;
     width: 100%;
     margin: auto;
+    object-fit: cover;
 }
 
 .call .images {
     margin-top: 10%;
-  
+
 }
 
 .call .names {
     margin-top: 2%;
     text-align: center;
-    color : white;
+    color: white;
     margin-bottom: 5%;
 }
 
-.call .names h2{
-    font-size: 3em ;
+.call .names h2 {
+    font-size: 3em;
     overflow: hidden;
     font-weight: bold;
 }
 
-.call .names p{
-    font-size: 1.2em ;
+.call .names p {
+    font-size: 1.2em;
     overflow: hidden;
     font-weight: bold;
 }
@@ -192,6 +154,7 @@ body {
     background-size: cover;
 
 }
+
 .service {
     background-color: rgba(189, 164, 164, 0.8);
     margin: 0;
@@ -199,27 +162,33 @@ body {
     max-width: 100%;
     color: black;
 }
-.service  .one {
+
+.service .one {
     margin-top: 10%;
 }
-.service  .two {
+
+.service .two {
     margin-top: 5%;
     margin-bottom: 10%;
 }
+
 .service .img {
     text-align: center;
 }
+
 .service img {
     width: 300px;
     height: 400px;
 }
-.service h2{
+
+.service h2 {
     overflow: hidden;
     text-align: center;
     font-size: 3em;
     font-weight: bold;
 }
-.service p{
+
+.service p {
     text-align: justify;
     padding-left: 20%;
     padding-right: 20%;
@@ -228,3 +197,61 @@ body {
     font-weight: bold;
 }
 
+.hiddeComputer{
+    display: none;
+}
+
+.namesMobile{
+    display: none;
+}
+@media screen and (max-width: 768px){
+
+    .hiddeTable{
+        display: none;
+    }
+    .hiddeComputer{
+        display: initial;
+    }
+
+    .good{
+        padding-top: 0;
+    }
+    .imgGood img{
+       width: 200px;
+    }
+    
+}
+
+@media screen and (max-width: 576px) {
+
+    .containerCuts{
+        height: 100%;
+    }
+    .containerC{
+        margin-bottom: 40px;
+    }
+
+    .images img{
+        width: 350px;
+        height: 350px;
+        margin-bottom: 20px;
+
+    }
+    .names{
+        display: none;
+    }
+    .namesMobile{
+        display: initial;
+        text-align: center;
+        color: #ffff;
+    } 
+    .service p {
+        text-align: center;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 50px;
+        font-size: 1em;
+  
+    }
+    
+}

@@ -27,16 +27,22 @@ body {
 
 /*  products*/
 .containerProducts {
-    background: white;
-    border: solid rgb(32, 32, 32) 1px;
+    background-image: url("../Fonts/images/pexels-photo-1319462.jpg");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+    
 }
 
 .products {
-    padding-top : 16%;
+    background-color: rgba(200, 164, 170, 0.9);
+    padding-top : 150px;
     margin: 0;
     width: 100%;
     max-width: 100%;
-    color: black;
+    color: #ffff;
 
 }
 
@@ -56,6 +62,11 @@ body {
     position: absolute;
     bottom: 50%;
     left: 50%;
+    object-fit: cover;
+}
+
+.products p{
+    text-align: center;
 }
 
 /* Gallery */
@@ -68,29 +79,32 @@ body {
 }
 .gallery img {
     height:  400px;
-    width: 80%;
+    width: 200px;
+
 }
-.gallery .one img {
-    width: 30%;
+
+
+@media screen and (max-width: 768px){
+    .products {
+        padding-top : 20px;
+    }
+    .gallery img {
+        height:  200px;
+        width: 400px;
+    }
+    .products img{
+        width: 200px;
+    }
+    
 }
-.gallery .two img {
-    width: 40%;
-}
-.gallery .three img {
-    width: 40%;
-}
-.gallery .one div{
-    display: flex;
-    justify-content: space-between;
-}
-.gallery .two div{
-    display: flex;
-    justify-content: space-between;
-}
-.gallery .three div{
-    display: flex;
-    justify-content: space-between;
-}
-.gallery .four div {
-    text-align: center;
+
+@media screen and (max-width: 576px) {
+    .formContainer .text h2 {
+        font-size: 1.5em;
+        color: black;
+        overflow: hidden;
+        margin-bottom: 20px;
+    
+    }
+    
 }
